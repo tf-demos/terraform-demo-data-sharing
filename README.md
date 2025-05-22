@@ -47,6 +47,8 @@ terraform apply #interactively confirm the apply or change it for terraform appl
 
 ### 5. Cleanup
 
+From HCP Terraform, destroy the resources inside of the demo workspaces compute and networking and then destroy this infrastructure:
+
 ```bash
 terraform destroy #interactively confirm the apply or change it for terraform destroy -auto-approve
 ```

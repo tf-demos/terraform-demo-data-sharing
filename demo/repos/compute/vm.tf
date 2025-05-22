@@ -17,6 +17,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "web" {
   ami             = data.aws_ami.ubuntu.id
   instance_type   = "t3.small"
+  # This is where we use the output from the networking workspace. To reference the value we have to know the name e.g. "vm_security_group"
   security_groups = [data.tfe_outputs.networking.nonsensitive_values["vm_security_group"]]
 
   user_data = templatefile("boot.sh", {
