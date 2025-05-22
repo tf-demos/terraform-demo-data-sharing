@@ -35,9 +35,11 @@ mv demo/terraform.tfvars.example demo/terraform.tfvars
 **AWS** - To deploy the resources from HCP Terraform to AWS you'll need the required credentials configured in HCP Terraform. The best way to accomplish this is by creating a variable set and making it available to the workspaces created in this demo configuration.
 
 ### 4. Apply
-Inside this directory run:
+Inside the [`demo`](./demo/) directory run:
 
 ```bash
+cd demo
+
 terraform init
 
 terraform apply #interactively confirm the apply or change it for terraform apply -auto-approve
