@@ -1,0 +1,3 @@
+org-name          = "your org"
+customer          = "SAP"
+oauth_client_name = "the name of the oauth client in your org"

@@ -1,0 +1,21 @@
+# Assuming all HCP info is in cloud.tf, exclude all that:
+*cloud.tf
+
+#  Local .terraform directories
+**/.terraform/*
+
+# Hidden terraform files:
+**.terraform*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+# terraformrc file
+.terraformrc
+terraform.rc
+
+*.DS_store
